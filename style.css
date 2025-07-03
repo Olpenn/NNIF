@@ -1,77 +1,20 @@
 * {
         margin: 0;
       }
-      .menu {
-        position: relative;
-        padding-left: 10px;
-        padding-right: 10px;
-        display: flex;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 80px;
-        background-color: red;
-        border-bottom: 3px solid black;
-      }
-      .logo {
-        position: relative;
-        height: 100%;
-        border-radius: 50%;
-        background-color: black;
-      }
-      .menu-items {
-        position: relative;
-        top: 10%;
-        flex-grow: 1;
-        height: 80%;
-        float: right;
-      }
-      .menu-item {
-        position: relative;
-        float: left;
-        width: 33%;
-        top: 30%;
-      }
-      .menu-item-text {
-        position: relative;
-        text-align: center;
-        right: 0px;
-        left: 10%;
-        width: 80%;
-        font-size: 16px;
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 5px;
-      }
-      .social-media-card {
-        position: relative;
-        float: left;
-        width: 100%;
-      }
       .facebook-card {
         position: relative;
-        left: 10%;
-        width: 80%;
-        height: 100%;
         text-align: center;
         background-color: aqua;
         border: 2px solid black;
         border-radius: 5px;
       }
-      .facebook-card-input {
-        position: relative;
-        margin: 2%;
-      }
       .fb-logo {
-        position: relative;
         height: 20px;
-      }
-      .headline {
-        margin: 10px;
-        text-align: center;
+        margin-top: 8px; 
       }
       .social-media-link {
-        position: relative;
+        display: grid;
+        grid-template-columns: 40px 1fr 40px;
         height: 40px;
         line-height: 40px;
         background-color: antiquewhite;
@@ -79,43 +22,28 @@
         margin: 10px;
       }
       .sport-logo {
-        float: left;
-        position: relative;
-        height: 100%;
+        height: 40px;
       }
       .social-media-link-text {
-        position: relative;
-        height: 100%;
-        width: 100%;
         font-size: 16px;
-      }
-      .link {
-        position: relative;
-        text-align: left;
-        vertical-align: middle;
-      }
-      .schedule {
-        margin: 0 10%;
-        width: 80%;
-      }
-      .schedule-content {
-        background-color: tomato;
-        border: 2px solid black;
-        border-radius: 5px;
       }
       .schedule-table {
         width: 100%;
         text-align: center;
         background-color: white;
       }
+      tr {
+        height: 40px
+      }
       .logo-container {
+        height: 40px;
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: antiquewhite;
       }
       .table-logo {
         height: 20px;
-        
       }
       header {
         display: flex;
@@ -136,4 +64,39 @@
         list-style: none;
         flex-wrap: wrap;
         justify-content: space-evenly;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 10%;
+      }
+      main {
+        background-color: rgba(0, 0, 0, 0.178);
+        margin: 0 10%;
+        padding: 50px 0;
+      }
+      section {
+        margin: 10%;
+      }
+      .footer {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px 40px 40px;
+        gap: 20px;
+        margin: 20px 20px 0 20px;
+        padding-top: 20px;
+      }
+      .footer-kolumn {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 40px 40px 40px;
+      }
+      .trademark {
+        color: red;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      footer {
+        background-color: whitesmoke;
       }
