@@ -90,12 +90,7 @@ section {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 700px) {
-  #facebook-wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+
 
 .fb-logo {
   height: 20px;
@@ -138,6 +133,39 @@ section {
 .sport-card iframe {
   width: 100%;
   margin: 1rem 0;
+}
+
+.full-text {
+  display: block;
+}
+
+.short-text {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #facebook-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-wrapper {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .full-text {
+    display: none;
+  }
+
+  .short-text {
+    display: block;
+  }
 }
 
 .footer {
