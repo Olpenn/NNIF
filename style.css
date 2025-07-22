@@ -95,16 +95,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .facebook-card {
-    grid-template-rows: 1fr 1fr;
-    max-height: 5rem;
-  }
-
-  .facebook-card .facebook-link-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
 }
 
 .fb-logo {
