@@ -11,6 +11,15 @@ a {
   color: black;
 }
 
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-size: 30px;
+}
+
 body::before {
   content: "";
   position: absolute;
@@ -19,85 +28,6 @@ body::before {
   background-position: center;
   filter: blur(10px);
   z-index: -1;
-}
-
-
-#fb-text {
-  width: 100%;
-}
-
-section {
-  background-color: rgba(250, 235, 215, 0.459);
-  padding: 20px;
-  border: solid black;
-  border-radius: 10px;
-  margin: 5em;
-  max-width: 60rem;
-}
-
-#facebook-wrapper {
-  display: flex;
-  gap: 2rem;
-}
-
-.facebook-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: rgba(0, 0, 0, 0.24);
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-top: 0px;
-  max-height: 15rem;
-  align-items: center;
-  justify-items: center;
-}
-
-.fb-logo {
-  height: 20px;
-  margin-top: 8px;
-
-}
-
-.facebook-card a {
-  min-width: max-content;
-  flex-grow: 1;
-  height: 2rem;
-  line-height: 2rem;
-  background-color: antiquewhite;
-  border-radius: 4px;
-  margin: 10px;
-  padding: 0 10px;
-}
-
-.sport-logo {
-  height: 40px;
-}
-
-.social-media-link-text {
-  font-size: 16px;
-}
-
-.schedule-table {
-  width: 100%;
-  text-align: center;
-  background-color: white;
-}
-
-tr {
-  height: 40px;
-}
-
-.logo-container {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: antiquewhite;
-}
-
-.table-logo {
-  height: 20px;
 }
 
 header {
@@ -123,13 +53,81 @@ nav ul {
   justify-content: space-evenly;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
+main {
+  justify-items: center;
 }
 
-p {
-  font-size: 30px;
+section {
+  background-color: rgba(250, 235, 215, 0.459);
+  padding: 20px;
+  border: solid black;
+  border-radius: 10px;
+  margin: 5em;
+  max-width: 60rem;
+}
+
+
+
+#facebook-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.facebook-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.24);
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 0px;
+  max-height: 15rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.fb-logo {
+  height: 20px;
+  margin-top: 8px;
+}
+
+.facebook-card a {
+  min-width: max-content;
+  flex-grow: 1;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.social-media-link-text {
+  font-size: 16px;
+
+}
+
+
+.schedule-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  border: 2px black solid;
+}
+
+.sport-card {
+  padding: 1rem;
+  border: black solid 2px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  margin-top: 2rem;
+}
+
+.sport-card iframe {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .footer {
@@ -157,69 +155,6 @@ p {
 
 footer {
   background-color: whitesmoke;
-}
-
-.sports-selector {
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-}
-
-.sports-selector img {
-  border: 2px black solid;
-  border-radius: 50%;
-  opacity: 50%;
-  height: 20px;
-  padding: 5px;
-  background-color: rgb(250, 235, 215);
-  opacity: 0.5;
-  transition: opacity ease 0.5s, height ease 0.5s;
-}
-
-.sports-selector img:hover {
-  opacity: 1;
-}
-
-.selected img {
-  height: 40px;
-  padding: 10px;
-  background-color: antiquewhite;
-  opacity: 1;
-}
-
-.not-selected {
-  height: 20px;
-  padding: 5px;
-  background-color: rgb(250, 235, 215);
-  opacity: 0.5;
-}
-
-.sports-cards {
-  padding: 10% 10%;
-  gap: 10%;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-  border: black solid;
-}
-
-.sport-card {
-  padding: 10px;
-  border: black solid 2px;
-  border-radius: 10px;
-  background-color: white;
-  margin-top: 10%;
-}
-
-.sport-card iframe {
-  width: 100%;
 }
 
 footer p {
