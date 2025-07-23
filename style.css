@@ -68,7 +68,6 @@ section {
 
 #facebook-wrapper {
   display: flex;
-  gap: 1rem;
 }
 
 .facebook-card {
@@ -79,15 +78,19 @@ section {
   border: 2px solid black;
   border-radius: 5px;
   margin-top: 0px;
-  max-height: 11rem;
   align-items: center;
   justify-items: center;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 2rem;
 }
 
 .facebook-card .facebook-link-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.3rem;
 }
 
 
@@ -104,8 +107,7 @@ section {
   line-height: 2rem;
   background-color: antiquewhite;
   border-radius: 4px;
-  margin: 0.5rem;
-  padding: 0 1rem;
+  text-align: center;
 }
 
 .social-media-link-text {
@@ -147,6 +149,20 @@ section {
   #facebook-wrapper {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .facebook-card {
+    width: 100%;
+  }
+
+  .facebook-card .facebook-link-wrapper {
+    margin: auto;
+    width: 90%;
+  }
+
+  .facebook-card a {
+    width: 100%;
+
   }
 }
 
